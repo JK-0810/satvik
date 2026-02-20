@@ -5,15 +5,15 @@ const background = document.querySelector(".background");
 
 const scenes = [
 
-`I don’t just love you.`,
+`I don't just love you.`,
 
 `I think about you every second.
 When I wake up.
 When I sleep.`,
 
-`When you don’t call…
+`When you don't call…
 I act normal.
-But inside I’m waiting.`,
+But inside I'm waiting.`,
 
 `I overthink.
 I get scared.
@@ -27,17 +27,17 @@ The way you held me.`,
 Sometimes I just miss you for no reason.`,
 
 `I know I overreact sometimes.
-But it’s never because I don’t love you.`,
+But it's never because I don't love you.`,
 
-`It’s because I love you too much.`,
+`It's because I love you too much.`,
 
 `You make me feel safe.
 You make me feel chosen.`,
 
-`And I don’t keep backup plans.
-It’s just you.`,
+`And I don't keep backup plans.
+It's just you.`,
 
-`Even on days I pretend I don’t care…
+`Even on days I pretend I don't care…
 I choose you.`,
 
 `You are not just my boyfriend.
@@ -45,7 +45,7 @@ You are my safest place.`,
 
 `And even when you're busy building your world…`,
 
-`I’m still here.
+`I'm still here.
 Not going anywhere.`,
 
 `But before I say anything else…`,
@@ -134,10 +134,10 @@ function showFinal() {
 
     setTimeout(() => {
         text.innerHTML = `
-        I hope it comes true.<br><br>
-        Happy Birthday, <span class="glow">Monkey</span>.<br><br>
-        I’m proud of you.<br>
-        And I’m not going anywhere..<br>
+        I hope it comes true.<br/>
+        Happy Birthday, <span class="glow">Monkey</span>.<br/>
+        I'm proud of you.<br>
+        And I'm not going anywhere..<br/>
 
         <span class="signature">
             — With love,<br>
