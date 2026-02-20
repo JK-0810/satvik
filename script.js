@@ -59,6 +59,9 @@ Not going anywhere.`,
 
 let index = 0;
 let typing = false;
+const music = new Audio("I_Wanna_Be_Yours.mp3");
+music.loop = true; // optional (repeats the song)
+music.volume = 0.8; // optional (0.0 to 1.0)
 
 function typeWriter(content) {
     typing = true;
@@ -100,20 +103,46 @@ function nextScene() {
     }
 }
 
+// function showFinal() {
+//     container.classList.add("fade");
+
+//     setTimeout(() => {
+//         text.innerHTML = `
+//         I hope it comes true.<br><br>
+//         Happy Birthday, <span class="glow">Satvik</span>.<br><br>
+//         I’m proud of you.<br>
+//         And I’m not going anywhere.<br><br>
+
+//         <span class="signature">
+//     — With love,<br>
+//     <span class="signature-name">Soni</span>
+//     </span>
+//         `;
+
+//         container.classList.remove("fade");
+//         hint.style.display = "none";
+
+//         background.style.background =
+//         "linear-gradient(-45deg, #24143b, #3b1f5c, #4c2a7a, #2b1a4d)";
+
+//         document.body.style.filter = "brightness(1.15)";
+
+//     }, 500);
+// }
 function showFinal() {
     container.classList.add("fade");
 
     setTimeout(() => {
         text.innerHTML = `
         I hope it comes true.<br><br>
-        Happy Birthday, <span class="glow">Satvik</span>.<br><br>
+        Happy Birthday, <span class="glow">Monkey</span>.<br><br>
         I’m proud of you.<br>
-        And I’m not going anywhere.<br><br>
+        And I’m not going anywhere..<br>
 
         <span class="signature">
-    — With love,<br>
-    <span class="signature-name">Soni</span>
-</span>
+            — With love,<br>
+            <span class="signature-name">Panda</span>
+        </span>
         `;
 
         container.classList.remove("fade");
@@ -123,6 +152,11 @@ function showFinal() {
         "linear-gradient(-45deg, #24143b, #3b1f5c, #4c2a7a, #2b1a4d)";
 
         document.body.style.filter = "brightness(1.15)";
+
+        // 🎵 Play music here
+        music.play().catch(() => {
+            console.log("Autoplay blocked until user interaction.");
+        });
 
     }, 500);
 }
